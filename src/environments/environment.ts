@@ -1,9 +1,18 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+import {NgxLoggerLevel} from 'ngx-logger';
 
 export const environment = {
-  production: false
+  production: false,
+  serverUrl: 'http://localhost:8190',
+  auth: {
+    issuer: 'http://localhost:8080/auth/realms/panel',
+    clientId: 'webapp'
+  },
+  logger: {
+    level: NgxLoggerLevel.DEBUG
+  }
 };
 
 /*
