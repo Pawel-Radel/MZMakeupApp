@@ -2,6 +2,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "NgxRadelAuth": [
+        "dist/ngx-radel-auth"
+      ],
+      "RadelAuth": [
+        "dist/radel-auth/radel-auth",
+        "dist/radel-auth"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
