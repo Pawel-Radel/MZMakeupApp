@@ -3,7 +3,7 @@ import {select, Store} from '@ngrx/store';
 import {Observable} from 'rxjs';
 import {filter, map, tap} from 'rxjs/operators';
 
-import * as fromAuth from 'ngx-softlab-auth';
+import * as fromAuth from '/projects/ngx-radel-auth/src/lib/store/selectors/user.selectors';
 import {Injectable} from '@angular/core';
 
 @Injectable({

@@ -1,12 +1,18 @@
 import {Inject, Injectable} from "@angular/core";
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import {concatMap, filter, map, of, withLatestFrom} from "rxjs";
+import {concatMap, filter, map, of, switchMap, tap, withLatestFrom} from "rxjs";
 import * as AuthActions from '../actions';
 import {select, Store} from "@ngrx/store";
 import {OAuthService} from "angular-oauth2-oidc";
-import {VisitAbilityService} from "../../services";
+import {ABILITIES_CONFIG, VisitAbilityService} from "../../services";
 import {Router} from "@angular/router";
-import {PureAbility} from "@casl/ability";
+import {AbilityBuilder, PureAbility} from "@casl/ability";
+import * as fromAuthState from '../selectors/auth.selectors';
+import * as fromRouter from '../selectors/router.selectors';
+import * as fromUserState from '../selectors/user.selectors';
+import {AbilityResource, UserRoleAbility} from "../../model";
+import {AppAbility} from "../../app-ability";
+import {NgxRadelAuthState} from "../reducers";
 
 @Injectable()
 export class AppAbilityEffects {
@@ -20,7 +26,7 @@ export class AppAbilityEffects {
       )
     )),
     filter(([action, userRoles, skipBasedOnTokenAbilities]) => skipBasedOnTokenAbilities === false),
-    map(([action, userRoles]) => {
+    map(([action, userRoles, skipBasedOnTokenAbilities]) => {
       const claims: any = this.oauthService.getIdentityClaims();
 
       if (JSON.stringify(claims?.roles) !== JSON.stringify(userRoles)) {
@@ -91,7 +97,7 @@ export class AppAbilityEffects {
 
   constructor(@Inject(ABILITIES_CONFIG) private abilitiesConfig: Map<string, UserRoleAbility>,
               private actions$: Actions,
-              private store$: Store<NgxSoftlabAuthState>,
+              private store$: Store<NgxRadelAuthState>,
               private ability: PureAbility,
               private router: Router,
               private visitAbilityService: VisitAbilityService,
