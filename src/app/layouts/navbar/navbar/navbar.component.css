@@ -1,0 +1,21 @@
+.social {
+  position: absolute;
+  right: 0;
+  text-align: center;
+  margin: 0 30px;
+  padding-top: 20px;
+  z-index: 1313;
+}
+li:hover {
+  border-bottom: 1px solid darkgoldenrod!important;
+}
+
+ul li {
+  list-style: none;
+  transition: border-bottom-color 0.6s;
+}
+
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  transform: none !important;
+}
+

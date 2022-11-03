@@ -7,7 +7,7 @@ export const environment = {
   production: false,
   serverUrl: 'http://localhost:8190',
   auth: {
-    issuer: 'http://localhost:8080/auth/realms/panel',
+    issuer: 'http://localhost:8080/auth/realms/myrealm',
     clientId: 'webapp'
   },
   logger: {

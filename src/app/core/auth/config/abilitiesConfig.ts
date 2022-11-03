@@ -1,7 +1,7 @@
-// TODO zastanowić się czy to potrzebuje
+import {AbilityResource, UserRoleAbility} from "../../../../../projects/ngx-radel-auth/src/lib/model";
+import {commune_employee, customer_admin, garbage_dumps_employee, satellite_observer, sewage_treatment_plant_employee, smgFmsAdmin} from "./application-roles";
 
-
-/*const NVTAdminAbility = {
+const NVTAdminAbility = {
   defaultPage: '/dashboard',
   abilities: {
     visit: ['/', '/dashboard/!**', '/profile/!**', '/tenants/!**', '/welcome/!**', '/nvt/admins/!**', '/admins/!**']
@@ -22,4 +22,4 @@ export const abilitiesConfig = new Map([
   [garbage_dumps_employee, CustomerAdminAbility],
   [satellite_observer, CustomerAdminAbility],
   [sewage_treatment_plant_employee, CustomerAdminAbility]
-]);*/
+]);

@@ -1,6 +1,6 @@
 import {ActionReducerMap, createFeatureSelector, createSelector} from "@ngrx/store";
 
-export const ngxSoftlabAuthFeatureKey = 'ngx-softlab-auth';
+export const ngxRadelAuthFeatureKey = 'ngx-softlab-auth';
 import { routerReducer, RouterReducerState } from '@ngrx/router-store';
 import * as fromAbilities from './ability.reducer';
 import * as fromUser from './user.reducer';
@@ -13,7 +13,7 @@ export interface NgxRadelAuthState {
   [fromUser.userFeatureKey]: fromUser.State;
 }
 
-export const ngxSoftlabAuthReducers: ActionReducerMap<NgxRadelAuthState> = {
+export const ngxRadelAuthReducers: ActionReducerMap<NgxRadelAuthState> = {
   router: routerReducer,
   [fromAuth.authFeatureKey]: fromAuth.reducer,
   [fromAbilities.abilitiesFeatureKey]: fromAbilities.reducer,
@@ -21,7 +21,7 @@ export const ngxSoftlabAuthReducers: ActionReducerMap<NgxRadelAuthState> = {
 } as any;
 
 
-export const ngxRadelAuthState = createFeatureSelector<NgxRadelAuthState>(ngxSoftlabAuthFeatureKey);
+export const ngxRadelAuthState = createFeatureSelector<NgxRadelAuthState>(ngxRadelAuthFeatureKey);
 
 export const selectAbilitiesState = createSelector(
   ngxRadelAuthState,
