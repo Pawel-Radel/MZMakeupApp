@@ -1,0 +1,64 @@
+.h-32-vw {
+  height: 32vw;
+}
+
+.slideImage {
+  height: 100%;
+  width: 100%
+}
+
+.slidePhotoLabel{
+  color: floralwhite;
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px lightslategrey;
+}
+
+.slidePhoto1Label {
+  font-size: 2vw;
+  bottom: 10%;
+  left: 20vw;
+}
+
+.slidePhoto2Label {
+  font-size: 4vw;
+  top: 30%;
+  right: 10vw;
+}
+
+.slidePhoto3Label {
+  font-size: 2.5vw;
+  bottom: 15%;
+  left: 2vw;
+}
+
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  transform: none !important;
+}
+
+.myZoomIn {
+  transform: scale(1.1, 1.1);
+  transition-duration: 6s;
+
+  transition-property: transform;
+}
+
+@keyframes zoomInZoomOut {
+  from {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+@-webkit-keyframes zoomInZoomOut {
+  from {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+}

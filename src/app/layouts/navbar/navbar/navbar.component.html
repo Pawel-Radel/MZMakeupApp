@@ -1,35 +1,29 @@
 <div class="w-100-p">
-<div fxLayout="column">
-<div>
-  <div class="social">
-    <a href="https://www.facebook.com/zdrojewskamagdalena" class="mr-12" >
-      <img style="width: 30px" src="assets/icons/facebook.png" alt="facebook">
-    </a>
-    <a href="https://www.instagram.com/zdrojewskamakeup/" >
-      <img style="width: 30px" src="assets/icons/instagram.png" alt="instagram">
-    </a>
+  <div fxLayout="column">
+    <div>
+      <div class="social">
+        <a href="https://www.facebook.com/zdrojewskamagdalena" class="mr-12">
+          <img style="width: 30px" src="assets/icons/facebook.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/zdrojewskamakeup/">
+          <img style="width: 30px" src="assets/icons/instagram.png" alt="instagram">
+        </a>
+      </div>
+      <div fxLayout="row" class="w--100-p" fxLayoutAlign="center center">
+        <img class="logo" [routerLink]="['/']" src="../../../../assets/images/logo.jpg"/>
+      </div>
+    </div>
+    <nav>
+      <ul fxLayout="row wrap" fxLayoutAlign="center center">
+        <li class="mr-24 navbarButton">
+          <mat-icon [routerLink]="['/']">home</mat-icon>
+        </li>
+        <li class="mr-24 navbarButton" [routerLink]="['/aboutMe']">O MNIE</li>
+        <li class="mr-24 navbarButton">OFERTA/CENNIK</li>
+        <li class="mr-24 navbarButton">GALERIA</li>
+        <li class="navbarButton">KONTAKT</li>
+      </ul>
+    </nav>
   </div>
-<div fxLayout="row" class="w--100-p" fxLayoutAlign="center center">
-  <img style="height: 20vw; margin: auto; cursor: pointer; max-height: 250px;" [routerLink]="['/']" src="assets/images/coppedLogo.jpg"/>
-</div>
-</div>
-  <nav>
-    <ul fxLayout="row" fxLayoutAlign="center center">
-      <li style="border-bottom: 1px solid white; cursor: pointer; font-size: 18px; color: darkgoldenrod; font-family: 'IBM Plex Serif', serif" class="mr-24"><mat-icon [routerLink]="['/']">home</mat-icon></li>
-      <li style="border-bottom: 1px solid white; cursor: pointer; font-size: 18px; color: darkgoldenrod; font-family: 'IBM Plex Serif', serif" class="mr-24" [routerLink]="['/aboutMe']">O MNIE</li>
-      <li style="border-bottom: 1px solid white; cursor: pointer; font-size: 18px; color: darkgoldenrod; font-family: 'IBM Plex Serif', serif" class="mr-24">OFERTA</li>
-      <li style="border-bottom: 1px solid white; cursor: pointer; font-size: 18px; color: darkgoldenrod; font-family: 'IBM Plex Serif', serif" class="mr-24">CENNIK</li>
-      <li style="border-bottom: 1px solid white; cursor: pointer; font-size: 18px; color: darkgoldenrod; font-family: 'IBM Plex Serif', serif" class="mr-24">GALERIA</li>
-      <li style="border-bottom: 1px solid white; cursor: pointer; font-size: 18px; color: darkgoldenrod; font-family: 'IBM Plex Serif', serif">KONTAKT</li>
-    </ul>
-  </nav>
-
-
-
-</div>
-
-
-
-
-
+  <app-carousel></app-carousel>
 </div>

@@ -27,7 +27,9 @@
     "@ngrx/router-store": "14.3.2",
     "@ngrx/store": "^14.3.2",
     "angular-oauth2-oidc": "^13.0.1",
+    "animate.css": "^4.1.1",
     "ngx-logger": "^5.0.11",
+    "ngx-owl-carousel-o": "^14.0.1",
     "rxjs": "~7.5.7",
     "tslib": "^2.4.1",
     "zone.js": "~0.11.8"

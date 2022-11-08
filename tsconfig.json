@@ -2,6 +2,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
     "paths": {
       "NgxRadelAuth": [
         "dist/ngx-radel-auth"
