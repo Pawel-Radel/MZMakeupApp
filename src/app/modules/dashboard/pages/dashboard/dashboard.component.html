@@ -1,1 +1,60 @@
-<p>dashboard works!</p>
+<div class="w-100-p">
+  <h1 class="w-100-p mt-24 mb-24 mainLabel">Kilka słów o mnie</h1>
+</div>
+
+<div class="w-100-p" fxLayout="row wrap" style="transition: 0.5s" fxLayoutAlign="center start" id="aboutMeContainer">
+
+  <img src="assets/images/aboutMeWoman.jpg" fxFlex="30" [ngClass.gt-sm]="'mr-40'" [ngClass.lt-md]="'mr-0'" fxFlex.lt-md="100">
+  <div fxFlex="40" fxFlex.lt-md="90" [ngStyle.lt-md]="'margin: auto'" [ngStyle.lt-sm]="'font-size: 3vw; line-height: 18px'"
+       class="aboutMeContainer">
+    <h2 class="welcomeLabel">Witam serdecznie!</h2>
+    <p [ngClass.gt-xs]="'mb-16'">Pozwolisz, że napiszę kilka słów o sobie.</p>
+    <p [ngClass.gt-xs]="'mb-16'">Nazywam się Magdalena Kozłowska, a makijaż jest moją największą pasją już ponad połowę mojego życia.</p>
+    <p [ngClass.gt-xs]="'mb-16'">Jestem wizażystką z wieloletnim doświadczeniem z zakresu makijażu profesjonalnego.</p>
+    <p [ngClass.gt-xs]="'mb-16'">Umiejętności zawodowe zdobywałam zarówno w Polsce jak i za granicą. Pracując w światowych stolicach mody, wśród wspaniałych artystów, pozyskiwałam wiedzę oraz inspiracje, z których
+      wyewoluował mój własny styl pracy.</p>
+    <p [ngClass.gt-xs]="'mb-16'">Przez wiele lat byłam związana ze znanymi na całym świecie markami kosmetycznymi.</p>
+    <p [ngClass.gt-xs]="'mb-16'">Dzięki temu miałam nieograniczone możliwości by poznawać najnowsze trendy, specjalistyczne techniki oraz uczestniczyć w eventach makijażowych w całej Europie (szkoły makijażu, szkolenia,
+      pokazy mody czy sesje zdjęciowe).</p>
+  </div>
+</div>
+<h1 class="w-100-p mt-24 mb-24 mainLabel">Co dalej?</h1>
+<h2 class="moreOptionsLabel">Chciałabyś dowiedzieć się więcej na temat prowadzonej przeze mnie działalności? </h2>
+<h2 style="font-size: 18px" class="moreOptionsLabel">Wybierz interesujące Cię zagadnienie spośród poniższych opcji!</h2>
+
+<div class="w-100-p ml-32 mr-32" fxLayout="row wrap" fxLayoutAlign="center center">
+
+  <div class="mr-40 mb-24 menuOption" [ngClass.lt-sm]="'mr-0'" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
+    <img src="../../../../../assets/images/menuPhoto1.jpg" class="menuImage">
+    <h2 class="mainLabel" style="font-size: 18px">Oferta / Cennik</h2>
+
+    <p class="moreOptionsDetailsLabel">Chciałabyś dowiedzieć sie jaki zakres usług oferuję i jaki jest ich koszt?</p>
+    <div class="w-100-p" fxLayout="row" fxLayoutAlign="center center">
+      <button class="menuButton1 menuButton" mat-raised-button>PRZEJDŹ
+      </button>
+    </div>
+  </div>
+
+  <div class="mr-40 mb-24 menuOption" [ngClass.lt-sm]="'mr-0'" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
+    <img src="../../../../../assets/images/menuPhoto2.jpg" class="menuImage">
+    <h2 class="mainLabel" style="font-size: 18px">Galeria</h2>
+
+    <p class="moreOptionsDetailsLabel">Chciałbyś przejrzeć moje prace? </p>
+    <div class="w-100-p" fxLayout="row" fxLayoutAlign="center center">
+      <button class="menuButton2 menuButton" mat-raised-button>PRZEJDŹ
+      </button>
+    </div>
+  </div>
+
+  <div class="menuOption mb-24" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
+    <img src="../../../../../assets/images/menuPhoto3.jpeg" class="menuImage">
+    <h2 class="mainLabel" style="font-size: 18px">Kontakt</h2>
+
+    <p class="moreOptionsDetailsLabel">Masz pytanie i chciałabyś się ze mną skontaktować?</p>
+    <div class="w-100-p" fxLayout="row" fxLayoutAlign="center center">
+      <button class="menuButton3 menuButton" mat-raised-button>PRZEJDŹ
+      </button>
+    </div>
+  </div>
+
+</div>

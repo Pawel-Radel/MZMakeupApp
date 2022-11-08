@@ -1,13 +1,21 @@
 import {NgModule, Optional, SkipSelf} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {OAuthModule} from "angular-oauth2-oidc";
+import {CommonModule} from '@angular/common';
 import {AuthModule} from "./auth/auth.module";
-import {StoreModule} from "@ngrx/store";
-import {metaReducers} from "../app.module";
+import {ActionReducer, MetaReducer, StoreModule} from "@ngrx/store";
 import {EffectsModule} from "@ngrx/effects";
 import {CORE_EFFECTS} from "./store";
 
+export const metaReducers: MetaReducer<any>[] = [debug];
 
+// console.log all actions
+export function debug(reducer: ActionReducer<any>): ActionReducer<any> {
+  return (state, action) => {
+    console.log('[STORE] state', state);
+    console.log('[STORE] action ', action.type);
+
+    return reducer(state, action);
+  };
+}
 
 @NgModule({
   declarations: [],
@@ -22,7 +30,7 @@ import {CORE_EFFECTS} from "./store";
       }
     }),
     EffectsModule.forRoot(CORE_EFFECTS),
-  ]
+  ],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
