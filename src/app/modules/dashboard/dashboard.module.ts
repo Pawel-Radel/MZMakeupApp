@@ -7,11 +7,13 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import {SharedModule} from "../../shared/shared.module";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatButtonModule} from "@angular/material/button";
+import { PriceListComponent } from './pages/price-list/price-list.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    PriceListComponent
   ],
   imports: [
     CommonModule,

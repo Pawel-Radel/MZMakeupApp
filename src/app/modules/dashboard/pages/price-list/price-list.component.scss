@@ -1,0 +1,39 @@
+.mainLabel {
+  color: burlywood;
+  text-align: center;
+  text-shadow: 2px 2px bisque;
+  font-size: 30px;
+  font-family: 'IBM Plex Serif';
+}
+
+.priceOptionTitle {
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  color: burlywood;
+  text-shadow: 2px 2px bisque
+}
+
+.mx-10vw {
+  margin: 0 10vw 0 10vw
+}
+
+.priceList {
+  div, h1 {
+    opacity: 0;
+    animation: fadeInDown;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    @for $i from 50 through 1 {
+      &:nth-child(#{$i}) {
+        animation-delay: 100ms + 300ms * $i;
+      }
+    }
+  }
+}
+
+.dottedLine {
+  border-bottom-style: dotted;
+  border-bottom-width: 2px;
+  margin-bottom: 10px;
+  color: darksalmon
+}
