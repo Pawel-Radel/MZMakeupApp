@@ -1,0 +1,69 @@
+.aboutMeContainer {
+  font-size: 20px;
+  color: black;
+  opacity: 0;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px beige;
+  line-height: 22px;
+  animation: backInLeft;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 250ms;
+}
+
+.abilitiesListLabel {
+  font-size: 20px;
+  color: black;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px beige;
+  line-height: 22px;
+}
+
+.mainLabel {
+  color: burlywood;
+  text-align: center;
+  text-shadow: 2px 2px bisque;
+  font-size: 30px;
+  font-family: 'IBM Plex Serif';
+}
+
+.my-list{
+  div, h1 {
+    opacity: 0;
+  }
+}
+
+.companyLabel {
+  opacity: 0;
+  animation: backInLeft;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
+}
+
+.my-list {
+  div, h1 {
+    animation: backInLeft;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    @for $i from 1 through 50 {
+      &:nth-child(#{$i}) {
+        animation-delay: 700ms + 100ms * $i;
+      }
+    }
+  }
+}
+
+.company-list {
+  img {
+    opacity: 0;
+    animation: backInLeft;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    @for $i from 1 through 50 {
+      &:nth-child(#{$i}) {
+        animation-delay: 1600ms + 150ms * $i;
+      }
+    }
+  }
+}

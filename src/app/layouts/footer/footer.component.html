@@ -1,1 +1,31 @@
-<p>footer works!</p>
+<div class="w-100-p footerBackground"  fxLayout="row wrap" fxLayoutAlign="center center"
+  fxLayout.lt-md="column" fxLayoutAlign.lt-md="center"
+>
+
+  <div fxLayoutAlign.lt-md="center center" fxLayout="column">
+    <h2 class="companyDataInfoLabel">Magda Kozłowska Make up</h2>
+   <h3 class="companyDataInfoLabel" fxLayoutAlign="start center"> <mat-icon class="mr-8">phone</mat-icon> 666666666</h3>
+   <h3 class="companyDataInfoLabel" fxLayoutAlign="start center"> <mat-icon class="mr-8">mail</mat-icon> m.kozlowska@wp.pl</h3>
+      <div class="social">
+        <a href="https://www.facebook.com/zdrojewskamagdalena" class="mr-12">
+          <img style="width: 30px" src="assets/icons/facebook.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/zdrojewskamakeup/">
+          <img style="width: 30px" src="assets/icons/instagram.png" alt="instagram">
+        </a>
+      </div>
+  </div>
+  <div  fxLayoutAlign.lt-md="center center" fxLayout="column" class="footerLogoImageContainer"><img style="height: 80%" src="assets/images/footerLogo.png"></div>
+
+  <div fxLayoutAlign.lt-md="center center" fxLayout="column">
+    <ul class="footerList">
+      <li><mat-icon>home</mat-icon></li>
+      <li>O mnie</li>
+      <li>Oferta/Cennik</li>
+      <li>Galeria</li>
+      <li>Kontakt</li>
+    </ul>
+  </div>
+
+  <div class="w-100-p footerPrivacyPolicyLabel" [ngStyle.lt-sm]="'font-size: 12px'" [ngStyle.lt-md]="'font-size: 16px'" >© Studio Wizażu i Stylizacji & Magdalena Kozłowska - All Rights Reserved |</div>
+</div>
