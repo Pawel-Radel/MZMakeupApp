@@ -4,7 +4,7 @@
 
 <div class="w-100-p" fxLayout="row wrap" style="transition: 0.5s" fxLayoutAlign="center start" id="aboutMeContainer">
 
-  <img src="assets/images/aboutMeWoman.jpg" fxFlex="30" [ngClass.gt-sm]="'mr-40'" [ngClass.lt-md]="'mr-0'" fxFlex.lt-md="100">
+  <img src="../../../../../assets/images/dashboard/aboutMeWoman.jpg" fxFlex="30" [ngClass.gt-sm]="'mr-40'" [ngClass.lt-md]="'mr-0'" fxFlex.lt-md="100">
   <div fxFlex="40" fxFlex.lt-md="90" [ngStyle.lt-md]="'margin: auto'" [ngStyle.lt-sm]="'font-size: 3vw; line-height: 18px'"
        class="aboutMeContainer">
     <h2 class="welcomeLabel">Witam serdecznie!</h2>
@@ -22,10 +22,10 @@
 <h2 class="moreOptionsLabel">Chciałabyś dowiedzieć się więcej na temat prowadzonej przeze mnie działalności? </h2>
 <h2 style="font-size: 18px" class="moreOptionsLabel">Wybierz interesujące Cię zagadnienie spośród poniższych opcji!</h2>
 
-<div class="w-100-p ml-32 mr-32" fxLayout="row wrap" fxLayoutAlign="center center">
+<div class="w-100-p ml-32 mr-32" fxLayout="row wrap" fxLayoutAlign="center stretch">
 
-  <div class="mr-40 mb-24 menuOption" [ngClass.lt-sm]="'mr-0'" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
-    <img src="../../../../../assets/images/menuPhoto1.jpg" class="menuImage">
+  <div class=" mb-24 menuOption" [ngClass.gt-xs]="'mr-40'" [ngClass.lt-sm]="'mr-0'" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
+    <img src="../../../../../assets/images/dashboard/menuPhoto1.jpg" class="menuImage">
     <h2 class="mainLabel" style="font-size: 18px">Oferta / Cennik</h2>
 
     <p class="moreOptionsDetailsLabel">Chciałabyś dowiedzieć sie jaki zakres usług oferuję i jaki jest ich koszt?</p>
@@ -35,25 +35,24 @@
     </div>
   </div>
 
-  <div class="mr-40 mb-24 menuOption" [ngClass.lt-sm]="'mr-0'" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
-    <img src="../../../../../assets/images/menuPhoto2.jpg" class="menuImage">
+  <div  fxLayout="column" class="mb-24 menuOption" [ngClass.gt-xs]="'mr-40'" [ngClass.lt-sm]="'mr-0'" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
+    <img src="../../../../../assets/images/dashboard/menuPhoto2.jpg" class="menuImage">
     <h2 class="mainLabel" style="font-size: 18px">Galeria</h2>
 
-    <p class="moreOptionsDetailsLabel">Chciałbyś przejrzeć moje prace? </p>
+    <p fxFlex class="moreOptionsDetailsLabel">Chciałbyś przejrzeć moje prace? </p>
     <div class="w-100-p" fxLayout="row" fxLayoutAlign="center center">
       <button class="menuButton2 menuButton" mat-raised-button>PRZEJDŹ
       </button>
     </div>
   </div>
 
-  <div class="menuOption mb-24" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
-    <img src="../../../../../assets/images/menuPhoto3.jpeg" class="menuImage">
+  <div fxLayout="column" class="menuOption mb-24" fxFlex="25" fxFlex.lt-md="28" fxFlex.lt-sm="90">
+    <img src="../../../../../assets/images/dashboard/menuPhoto3.jpeg" class="menuImage">
     <h2 class="mainLabel" style="font-size: 18px">Kontakt</h2>
 
-    <p class="moreOptionsDetailsLabel">Masz pytanie i chciałabyś się ze mną skontaktować?</p>
+    <p fxFlex class="moreOptionsDetailsLabel">Masz pytanie i chciałabyś się ze mną skontaktować?</p>
     <div class="w-100-p" fxLayout="row" fxLayoutAlign="center center">
-      <button class="menuButton3 menuButton" mat-raised-button>PRZEJDŹ
-      </button>
+      <button class="menuButton3 menuButton" mat-raised-button>PRZEJDŹ</button>
     </div>
   </div>
 

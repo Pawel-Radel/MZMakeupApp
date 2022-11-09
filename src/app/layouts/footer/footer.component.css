@@ -1,0 +1,45 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: floralwhite;
+  transition: 0.4s;
+}
+
+.footerPrivacyPolicyLabel {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  border-top: 1px solid black
+}
+
+.footerBackground {
+  background: rgb(187, 179, 199);
+  background: radial-gradient(circle, rgba(187, 179, 199, 1) 0%, rgba(246, 182, 138, 1) 100%);
+}
+
+.companyDataInfoLabel {
+  font-family: 'Playfair Display', serif
+}
+
+.footerLogoImageContainer {
+  height: 100%;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.footerList {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  padding: 0
+}
